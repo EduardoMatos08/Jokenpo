@@ -1,0 +1,184 @@
+* {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito';
+}
+
+head {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #3e3e3e;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+script {
+    display: none;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 70%;
+    width: 50%;
+    border-radius: 70px;
+    background-color: #1f1f1f;
+    box-shadow: 5px 5px 5px #000000a5;
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    transition: display 1s ease-in-out;
+}
+
+#buttons-images {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#p-results {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transition: margin-bottom 0.3s ease-in-out;
+}
+
+button {
+    
+    border: none;
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    background-color: #9a9a9a;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #5a5a5ab5;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+#rock {
+    height: 90%;
+    width: 90%;
+}
+
+#b-paper {
+    margin: 0 50px;
+}
+
+#paper {
+    height: 80%;
+    width: 80%;
+}
+
+#scissors {
+    height: 80%;
+    width: 80%;
+}
+
+p {
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: default;
+}
+
+#span-SP {
+    color: #1aff00;
+    text-shadow: 2px 2px 3px #1aff00c7;
+}
+
+#span-PC {
+    color: #ff0000;
+    text-shadow: 2px 2px 3px #ff0000c5;
+}
+
+#game-status-div {
+    display: none;
+    flex-direction: row-reverse;
+    position: absolute;
+    border: solid 3px #000000;
+    border-radius: 30px;
+    height: 70vh;
+    width: 60vw;
+    background-color: #a1a1a1;
+}
+
+#button-close {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+#button-close:hover {
+    opacity: 1;
+}
+
+#button-close:active {
+    opacity: 1;
+}
+
+h2 {
+    cursor: default;
+}
+
+#result {
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#result-span {
+    margin-left: 30px;
+}
