@@ -7,6 +7,12 @@ const spanPC = document.querySelector("#span-PC")
 let yourScoreNumber = 0
 let aiScoreNumber = 0
 
+const GAME_OPTIONS = {
+    ROCK: "rock",
+    PAPER: "paper",
+    SCISSORS: "scissors"
+}
+
 function clickButton(yourChoice) {
     
     result(yourChoice, randomizeNumber())
@@ -14,7 +20,7 @@ function clickButton(yourChoice) {
 }
 
 function randomizeNumber() {
-    const aiChoice = ['rock', 'paper', 'scissors']
+    const aiChoice = [GAME_OPTIONS.ROCK, GAME_OPTIONS.PAPER, GAME_OPTIONS.SCISSORS]
     let randomNumber = Math.floor(Math. random() * 3)
     
     return aiChoice[randomNumber]
@@ -34,7 +40,7 @@ function result(you, ai) {
 
     }
 
-    else if ((you == "paper" && ai == "rock") || (you == "scissors" && ai == "paper") || (you == "rock" && ai == "scissors")) {
+    else if ((you == GAME_OPTIONS.PAPER && ai == GAME_OPTIONS.ROCK) || (you == GAME_OPTIONS.SCISSORS && ai == GAME_OPTIONS.PAPER) || (you == GAME_OPTIONS.ROCK && ai == GAME_OPTIONS.SCISSORS)) {
 
         yourScoreNumber++
         spanSP.innerText = yourScoreNumber
