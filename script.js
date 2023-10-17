@@ -48,7 +48,7 @@ function result(you, ai) {
         gameStatusDiv.style.display = "flex";
         resultSpan.innerText = "GANHOU";
         resultSpan.style.color = "#1aff00"
-        
+
     }
 
     else {
@@ -59,7 +59,7 @@ function result(you, ai) {
         gameStatusDiv.style.display = "flex";
         resultSpan.innerText = "PERDEU";
         resultSpan.style.color = "#ff0000"
-
+    
     }
 
 }

@@ -125,12 +125,10 @@ p {
 
 #span-SP {
     color: #1aff00;
-    text-shadow: 2px 2px 3px #1aff00c7;
 }
 
 #span-PC {
     color: #ff0000;
-    text-shadow: 2px 2px 3px #ff0000c5;
 }
 
 #game-status-div {
@@ -181,4 +179,142 @@ h2 {
 
 #result-span {
     margin-left: 30px;
+}
+
+@media screen and (max-width: 1190px) {
+    
+    body {
+        background-color: #1f1f1f;
+    }
+
+    section {
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    #buttons-images {
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #b-paper {
+        margin: 20px;
+    }
+
+    #p-results {
+        margin: 0;
+    }
+    
+    #result {
+        font-size: 70px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    p {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    #result {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 685px) {
+
+    button {
+        height: 100px;
+        width: 100px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    section {
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    body {
+        background-color: #1f1f1f;
+    }
+
+    button {
+        height: 175px;
+        width: 175px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    #game-status-div {
+        height: 40%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    #result {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #result-span {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-height: 835px) {
+
+    body {
+        background-color: #1f1f1f;
+    }
+
+    section {
+        box-shadow: none;
+    }
+
+    button {
+        height: 110px;
+        width: 110px;
+    }
+
+}
+
+@media screen and (max-height: 385px) {
+
+    #button-images {
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    button {
+        height: 100px;
+        width: 100px;
+    }
+
 }
