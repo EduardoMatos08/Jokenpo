@@ -38,9 +38,7 @@ function result(you, ai) {
         resultSpan.innerText = "EMPATOU";
         resultSpan.style.color = "#ffdd00"
 
-    }
-
-    else if ((you == GAME_OPTIONS.PAPER && ai == GAME_OPTIONS.ROCK) || (you == GAME_OPTIONS.SCISSORS && ai == GAME_OPTIONS.PAPER) || (you == GAME_OPTIONS.ROCK && ai == GAME_OPTIONS.SCISSORS)) {
+    } else if ((you == GAME_OPTIONS.PAPER && ai == GAME_OPTIONS.ROCK) || (you == GAME_OPTIONS.SCISSORS && ai == GAME_OPTIONS.PAPER) || (you == GAME_OPTIONS.ROCK && ai == GAME_OPTIONS.SCISSORS)) {
 
         yourScoreNumber++
         spanSP.innerText = yourScoreNumber
@@ -49,9 +47,7 @@ function result(you, ai) {
         resultSpan.innerText = "GANHOU";
         resultSpan.style.color = "#1aff00"
 
-    }
-
-    else {
+    } else {
 
         aiScoreNumber++
         spanPC.innerText = aiScoreNumber
